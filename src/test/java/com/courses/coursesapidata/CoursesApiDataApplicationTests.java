@@ -45,12 +45,13 @@ public class CoursesApiDataApplicationTests {
 		String url=BASE_URL+"topics/"+topicId+"/courses";
 		Course courseRef=new Course();
 		courseRef.setId(1000);
-		courseRef.setCourseName("Java Web Development ");
-		courseRef.setCourseDescription("Java Web Development ");
+		courseRef.setCourseName("Java Web Development");
+		courseRef.setCourseDescription("Java Web Development");
 		ObjectMapper mapper = new ObjectMapper();
 	    mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
 	    ObjectWriter ow = mapper.writer().withDefaultPrettyPrinter();
 	    String requestJson=ow.writeValueAsString(courseRef);
+	    System.out.println("Hello");
 	    
 		try {
 			mockMVC.perform(
