@@ -1,0 +1,826 @@
+"2018-08-19 16:05:06 [main] INFO  c.c.c.CoursesApiDataApplication - Starting CoursesApiDataApplication on BTF714748 with PID 7516 (C:\Data\Eclipse-Workspace\courses-api-data\target\classes started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-19 16:05:06 [main] INFO  c.c.c.CoursesApiDataApplication - The following profiles are active: dev
+""2018-08-19 16:05:06 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 19 16:05:06 IST 2018]; root of context hierarchy
+""2018-08-19 16:05:10 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8100 (http)
+""2018-08-19 16:05:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-08-19 16:05:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+""2018-08-19 16:05:10 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-08-19 16:05:10 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4017 ms
+""2018-08-19 16:05:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2018-08-19 16:05:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-08-19 16:05:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-08-19 16:05:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-08-19 16:05:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-08-19 16:05:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-19 16:05:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-19 16:05:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-19 16:05:14 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-19 16:05:14 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-19 16:05:15 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-19 16:05:15 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-19 16:05:15 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-19 16:05:19 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-19 16:05:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-19 16:05:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-19 16:05:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-19 16:05:19 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-19 16:05:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 19 16:05:06 IST 2018]; root of context hierarchy
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-19 16:05:21 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-19 16:05:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-08-19 16:05:22 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8100 (http)
+""2018-08-19 16:05:22 [main] INFO  c.c.c.CoursesApiDataApplication - Started CoursesApiDataApplication in 18.003 seconds (JVM running for 20.503)
+""2018-08-24 14:36:03 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 13264 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 14:36:03 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 14:36:04 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@36b4fe2a: startup date [Fri Aug 24 14:36:04 IST 2018]; root of context hierarchy
+""2018-08-24 14:36:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:36:11 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 14:36:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 14:36:11 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 14:36:11 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 14:36:11 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 14:36:12 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 14:36:12 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 14:36:16 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 14:36:16 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:36:16 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 14:36:16 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 14:36:16 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:36:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@36b4fe2a: startup date [Fri Aug 24 14:36:04 IST 2018]; root of context hierarchy
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:36:20 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:36:21 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:36:21 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 19.043 seconds (JVM running for 23.516)
+""2018-08-24 14:36:21 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77846d2c] to prepare test instance [com.courses.coursesapidata.CoursesApiDataApplicationTests@7530090a]
+"org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.courses.coursesapidata.CoursesApiDataApplicationTests': Unsatisfied dependency expressed through field 'mockMVC'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 common frames omitted
+"2018-08-24 14:36:21 [Thread-4] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@36b4fe2a: startup date [Fri Aug 24 14:36:04 IST 2018]; root of context hierarchy
+""2018-08-24 14:36:21 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:36:21 [Thread-4] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:36:22 [Thread-4] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:43:20 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 7984 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 14:43:20 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 14:43:20 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3972a855: startup date [Fri Aug 24 14:43:20 IST 2018]; root of context hierarchy
+""2018-08-24 14:43:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:43:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 14:43:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 14:43:28 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 14:43:28 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 14:43:29 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 14:43:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 14:43:29 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 14:43:33 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 14:43:33 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:43:33 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 14:43:33 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 14:43:33 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:43:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:43:35 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 14:43:35 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:43:36 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3972a855: startup date [Fri Aug 24 14:43:20 IST 2018]; root of context hierarchy
+""2018-08-24 14:43:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1532 ms
+""2018-08-24 14:43:37 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 19.001 seconds (JVM running for 22.518)
+""2018-08-24 14:43:38 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3972a855: startup date [Fri Aug 24 14:43:20 IST 2018]; root of context hierarchy
+""2018-08-24 14:43:38 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:43:38 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:43:38 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:53:12 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 8528 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 14:53:12 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 14:53:12 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62e7f11d: startup date [Fri Aug 24 14:53:12 IST 2018]; root of context hierarchy
+""2018-08-24 14:53:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:53:19 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 14:53:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 14:53:19 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 14:53:19 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 14:53:19 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 14:53:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 14:53:19 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 14:53:23 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 14:53:23 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:53:23 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 14:53:23 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 14:53:23 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:53:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:53:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 14:53:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:53:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@62e7f11d: startup date [Fri Aug 24 14:53:12 IST 2018]; root of context hierarchy
+""2018-08-24 14:53:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1933 ms
+""2018-08-24 14:53:28 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 17.866 seconds (JVM running for 21.493)
+""2018-08-24 14:53:29 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@62e7f11d: startup date [Fri Aug 24 14:53:12 IST 2018]; root of context hierarchy
+""2018-08-24 14:53:29 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:53:29 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:53:29 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:59:05 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 9252 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 14:59:05 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 14:59:06 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:05 IST 2018]; root of context hierarchy
+""2018-08-24 14:59:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:59:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 14:59:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 14:59:16 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 14:59:16 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 14:59:16 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 14:59:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 14:59:17 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 14:59:20 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 14:59:20 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:21 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 14:59:21 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 14:59:21 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:59:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:59:23 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 14:59:23 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:23 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:05 IST 2018]; root of context hierarchy
+""2018-08-24 14:59:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1359 ms
+""2018-08-24 14:59:25 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 20.508 seconds (JVM running for 24.499)
+""2018-08-24 14:59:25 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:05 IST 2018]; root of context hierarchy
+""2018-08-24 14:59:25 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:59:25 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:59:25 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:59:41 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 9480 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 14:59:41 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 14:59:41 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:41 IST 2018]; root of context hierarchy
+""2018-08-24 14:59:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:59:50 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 14:59:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 14:59:50 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 14:59:50 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 14:59:50 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 14:59:51 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 14:59:51 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 14:59:55 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 14:59:55 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 14:59:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 14:59:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 14:59:55 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 14:59:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 14:59:57 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 14:59:57 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:58 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 14:59:59 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:41 IST 2018]; root of context hierarchy
+""2018-08-24 14:59:59 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1615 ms
+""2018-08-24 14:59:59 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 20.194 seconds (JVM running for 23.315)
+""2018-08-24 15:00:00 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1f97cf0d: startup date [Fri Aug 24 14:59:41 IST 2018]; root of context hierarchy
+""2018-08-24 15:00:00 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:00:00 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 15:00:00 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 15:01:10 [main] INFO  c.c.c.CoursesApiDataApplication - Starting CoursesApiDataApplication on BTF714748 with PID 11836 (C:\Data\Eclipse-Workspace\courses-api-data\target\classes started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 15:01:10 [main] INFO  c.c.c.CoursesApiDataApplication - The following profiles are active: dev
+""2018-08-24 15:01:11 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Fri Aug 24 15:01:11 IST 2018]; root of context hierarchy
+""2018-08-24 15:01:18 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8100 (http)
+""2018-08-24 15:01:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-08-24 15:01:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7921 ms
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-08-24 15:01:19 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-08-24 15:01:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:01:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 15:01:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 15:01:23 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 15:01:23 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 15:01:23 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 15:01:24 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 15:01:24 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 15:01:26 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 15:01:26 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:01:26 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 15:01:26 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 15:01:26 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 15:01:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:01:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Fri Aug 24 15:01:11 IST 2018]; root of context hierarchy
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:01:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:01:30 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-08-24 15:01:30 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8100 (http)
+""2018-08-24 15:01:31 [main] INFO  c.c.c.CoursesApiDataApplication - Started CoursesApiDataApplication in 21.878 seconds (JVM running for 23.348)
+""2018-08-24 15:10:15 [http-nio-8100-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2018-08-24 15:10:15 [http-nio-8100-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+""2018-08-24 15:10:15 [http-nio-8100-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 131 ms
+""2018-08-24 15:10:21 [http-nio-8100-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 15:42:06 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 13592 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 15:42:06 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 15:42:06 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 15:42:06 IST 2018]; root of context hierarchy
+""2018-08-24 15:42:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:42:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 15:42:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 15:42:14 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 15:42:14 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 15:42:14 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 15:42:14 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 15:42:14 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 15:42:21 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 15:42:21 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 15:42:21 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 15:42:21 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 15:42:21 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 15:42:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:42:24 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 15:42:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:42:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 15:42:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 15:42:06 IST 2018]; root of context hierarchy
+""2018-08-24 15:42:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1433 ms
+""2018-08-24 15:42:26 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 21.199 seconds (JVM running for 24.693)
+""2018-08-24 15:42:27 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 15:42:27 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 15:42:06 IST 2018]; root of context hierarchy
+""2018-08-24 15:42:27 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 15:42:27 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 15:42:27 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:32:18 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 9268 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 16:32:18 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 16:32:18 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:32:18 IST 2018]; root of context hierarchy
+""2018-08-24 16:32:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:32:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 16:32:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 16:32:23 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 16:32:23 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 16:32:23 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 16:32:23 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 16:32:23 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 16:32:25 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 16:32:25 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:32:25 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 16:32:25 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 16:32:25 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:32:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:32:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 16:32:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:32:27 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:32:28 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:32:18 IST 2018]; root of context hierarchy
+""2018-08-24 16:32:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1451 ms
+""2018-08-24 16:32:29 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 11.542 seconds (JVM running for 12.873)
+""2018-08-24 16:32:29 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 16:32:30 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:32:18 IST 2018]; root of context hierarchy
+""2018-08-24 16:32:30 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:32:30 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:32:30 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:33:14 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 8888 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 16:33:14 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 16:33:14 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:33:14 IST 2018]; root of context hierarchy
+""2018-08-24 16:33:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:33:19 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 16:33:20 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 16:33:20 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 16:33:20 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 16:33:20 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 16:33:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 16:33:20 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 16:33:22 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 16:33:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:33:22 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 16:33:22 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 16:33:22 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:33:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:33:23 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 16:33:23 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:33:24 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:33:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:33:14 IST 2018]; root of context hierarchy
+""2018-08-24 16:33:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1774 ms
+""2018-08-24 16:33:26 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 12.312 seconds (JVM running for 13.654)
+""2018-08-24 16:33:27 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 16:33:27 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:33:14 IST 2018]; root of context hierarchy
+""2018-08-24 16:33:27 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:33:27 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:33:28 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:39:49 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 13600 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 16:39:49 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 16:39:49 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:39:49 IST 2018]; root of context hierarchy
+""2018-08-24 16:39:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:39:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 16:39:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 16:39:59 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 16:39:59 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 16:39:59 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 16:39:59 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 16:39:59 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 16:40:03 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 16:40:03 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 16:40:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 16:40:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 16:40:03 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 16:40:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:40:07 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 16:40:07 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:40:08 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 16:40:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:39:49 IST 2018]; root of context hierarchy
+""2018-08-24 16:40:09 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1694 ms
+""2018-08-24 16:40:09 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 22.86 seconds (JVM running for 28.526)
+""2018-08-24 16:40:10 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 16:40:10 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 16:39:49 IST 2018]; root of context hierarchy
+""2018-08-24 16:40:10 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 16:40:10 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 16:40:11 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:06:22 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 12292 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 17:06:22 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 17:06:22 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:06:22 IST 2018]; root of context hierarchy
+""2018-08-24 17:06:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:06:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 17:06:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 17:06:30 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 17:06:30 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 17:06:30 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 17:06:30 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 17:06:30 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 17:06:35 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 17:06:35 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:06:35 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 17:06:35 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 17:06:35 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:06:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:06:37 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 17:06:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:06:38 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:06:39 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:06:22 IST 2018]; root of context hierarchy
+""2018-08-24 17:06:39 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1636 ms
+""2018-08-24 17:06:40 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 19.674 seconds (JVM running for 23.412)
+""2018-08-24 17:06:40 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 17:06:41 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:06:22 IST 2018]; root of context hierarchy
+""2018-08-24 17:06:41 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:06:41 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:06:41 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:07:30 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 1684 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 17:07:30 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 17:07:30 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:07:30 IST 2018]; root of context hierarchy
+""2018-08-24 17:07:39 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:07:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 17:07:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 17:07:39 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 17:07:39 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 17:07:39 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 17:07:39 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 17:07:39 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 17:07:43 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 17:07:43 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:07:43 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 17:07:43 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 17:07:43 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:07:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:07:45 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 17:07:45 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:07:46 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:07:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:07:30 IST 2018]; root of context hierarchy
+""2018-08-24 17:07:47 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1460 ms
+""2018-08-24 17:07:47 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 18.852 seconds (JVM running for 22.316)
+""2018-08-24 17:07:48 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 17:07:48 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@503d687a: startup date [Fri Aug 24 17:07:30 IST 2018]; root of context hierarchy
+""2018-08-24 17:07:48 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:07:48 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:07:48 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:18:09 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 9892 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 17:18:09 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 17:18:09 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:09 IST 2018]; root of context hierarchy
+""2018-08-24 17:18:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:18:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 17:18:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 17:18:18 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 17:18:18 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 17:18:18 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 17:18:18 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 17:18:18 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 17:18:22 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 17:18:22 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:18:22 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 17:18:22 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 17:18:22 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:18:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:18:25 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 17:18:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 17:18:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 17:18:26 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:18:26 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:18:26 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:18:26 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:09 IST 2018]; root of context hierarchy
+""2018-08-24 17:18:27 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1873 ms
+""2018-08-24 17:18:27 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 20.361 seconds (JVM running for 24.518)
+""2018-08-24 17:18:28 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 17:18:28 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:09 IST 2018]; root of context hierarchy
+""2018-08-24 17:18:28 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:18:28 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:18:28 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:18:54 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 6532 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 17:18:54 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 17:18:54 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:54 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 17:19:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 17:19:03 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 17:19:03 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 17:19:03 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 17:19:04 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 17:19:04 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 17:19:07 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 17:19:07 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:08 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 17:19:08 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 17:19:08 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:19:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:10 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 17:19:10 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:11 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:12 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:54 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:13 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 2058 ms
+""2018-08-24 17:19:13 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 21.005 seconds (JVM running for 24.704)
+""2018-08-24 17:19:14 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:18:54 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:14 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:14 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:19:14 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:19:32 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Starting CoursesApiDataApplicationTests on BTF714748 with PID 5748 (started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-24 17:19:32 [main] INFO  c.c.c.CoursesApiDataApplicationTests - The following profiles are active: dev
+""2018-08-24 17:19:33 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:19:33 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:41 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-24 17:19:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-24 17:19:42 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-24 17:19:42 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-24 17:19:42 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-24 17:19:42 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-24 17:19:42 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-24 17:19:46 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-24 17:19:46 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-24 17:19:46 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-24 17:19:46 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-24 17:19:46 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-24 17:19:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:48 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2018-08-24 17:19:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-24 17:19:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-24 17:19:49 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:19:33 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:50 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1777 ms
+""2018-08-24 17:19:50 [main] INFO  c.c.c.CoursesApiDataApplicationTests - Started CoursesApiDataApplicationTests in 19.844 seconds (JVM running for 24.322)
+""2018-08-24 17:19:51 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2018-08-24 17:19:51 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@140c9f39: startup date [Fri Aug 24 17:19:33 IST 2018]; root of context hierarchy
+""2018-08-24 17:19:51 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-24 17:19:51 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-24 17:19:51 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+"
