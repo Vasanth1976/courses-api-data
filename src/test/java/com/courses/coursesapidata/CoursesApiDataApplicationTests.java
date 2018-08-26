@@ -35,7 +35,7 @@ public class CoursesApiDataApplicationTests {
 	private String BASE_URL="/";
 	private MediaType mediaType=new MediaType(MediaType.APPLICATION_JSON.getType(),MediaType.APPLICATION_JSON.getSubtype(),Charset.forName("utf8"));
 	private String jsonContentForTopic=
-			"[    {        \"id\": 200,        \"courseName\": \"Spring\",        \"courseDescription\": \"Spring for Dummies\"    }]";
+			"[    {        \"id\": 100,        \"courseName\": \"Spring\",        \"courseDescription\": \"Spring for Dummies\"    }]";
 	
 	
 
