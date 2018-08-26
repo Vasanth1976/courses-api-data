@@ -823,4 +823,187 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 ""2018-08-24 17:19:51 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2018-08-24 17:19:51 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
 ""2018-08-24 17:19:51 [Thread-5] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-26 11:51:05 [main] INFO  c.c.c.CoursesApiDataApplication - Starting CoursesApiDataApplication on BTF714748 with PID 8520 (C:\Data\Eclipse-Workspace\courses-api-data\target\classes started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-26 11:51:05 [main] INFO  c.c.c.CoursesApiDataApplication - The following profiles are active: dev
+""2018-08-26 11:51:05 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 26 11:51:05 IST 2018]; root of context hierarchy
+""2018-08-26 11:51:11 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8100 (http)
+""2018-08-26 11:51:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-08-26 11:51:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+""2018-08-26 11:51:12 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-08-26 11:51:12 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6724 ms
+""2018-08-26 11:51:13 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2018-08-26 11:51:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-08-26 11:51:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-08-26 11:51:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-08-26 11:51:13 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-08-26 11:51:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-26 11:51:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-26 11:51:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-26 11:51:16 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-26 11:51:16 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-26 11:51:16 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-26 11:51:16 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-26 11:51:16 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-26 11:51:19 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-26 11:51:19 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:51:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-26 11:51:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-26 11:51:19 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-26 11:51:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 26 11:51:05 IST 2018]; root of context hierarchy
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:51:22 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:51:23 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-08-26 11:51:23 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8100"]
+"java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.courses.coursesapidata.CoursesApiDataApplication.main(CoursesApiDataApplication.java:10)
+"2018-08-26 11:51:23 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8100]]
+"org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.courses.coursesapidata.CoursesApiDataApplication.main(CoursesApiDataApplication.java:10)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+"2018-08-26 11:51:23 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2018-08-26 11:51:23 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2018-08-26 11:51:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8100, or configure this application to listen on another port.
+
+""2018-08-26 11:51:23 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 26 11:51:05 IST 2018]; root of context hierarchy
+""2018-08-26 11:51:23 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-08-26 11:51:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-26 11:51:23 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-26 11:51:23 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-26 11:51:48 [main] INFO  c.c.c.CoursesApiDataApplication - Starting CoursesApiDataApplication on BTF714748 with PID 7692 (C:\Data\Eclipse-Workspace\courses-api-data\target\classes started by 606461380 in C:\Data\Eclipse-Workspace\courses-api-data)
+""2018-08-26 11:51:48 [main] INFO  c.c.c.CoursesApiDataApplication - The following profiles are active: dev
+""2018-08-26 11:51:49 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 26 11:51:49 IST 2018]; root of context hierarchy
+""2018-08-26 11:51:54 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8200 (http)
+""2018-08-26 11:51:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-08-26 11:51:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5321 ms
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-08-26 11:51:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-08-26 11:51:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-08-26 11:51:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-08-26 11:51:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2018-08-26 11:51:57 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-08-26 11:51:57 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2018-08-26 11:51:57 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-08-26 11:51:58 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+""2018-08-26 11:51:58 [main] WARN  org.hibernate.dialect.DerbyDialect - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+""2018-08-26 11:52:00 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table course drop constraint FKokaxyfpv8p583w8yspapfb2ar
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table course
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table topic
+""2018-08-26 11:52:00 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Schema 'SA' does not exist
+""2018-08-26 11:52:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+""2018-08-26 11:52:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'memory:testdb' not created, connection made to existing database instead.
+""2018-08-26 11:52:00 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2018-08-26 11:52:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dd92fe2: startup date [Sun Aug 26 11:51:49 IST 2018]; root of context hierarchy
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{courseId}]}" onto public com.courses.coursesapidata.data.Course com.courses.coursesapidata.controller.CourseAPIController.getCourse(int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteCourse(int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics]}" onto public java.util.List<com.courses.coursesapidata.data.Topic> com.courses.coursesapidata.controller.CourseAPIController.getTopics()
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[DELETE]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.deleteTopic(int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createCourse(com.courses.coursesapidata.data.Course,int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics],methods=[POST]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.createTopic(com.courses.coursesapidata.data.Topic)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateTopic(int,com.courses.coursesapidata.data.Topic)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{id}/courses]}" onto public java.util.List<com.courses.coursesapidata.data.Course> com.courses.coursesapidata.controller.CourseAPIController.getCourses(int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/id/{id}]}" onto public com.courses.coursesapidata.data.Topic com.courses.coursesapidata.controller.CourseAPIController.getTopic(int)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/topics/{topicid}/courses/{id}],methods=[PUT]}" onto public void com.courses.coursesapidata.controller.CourseAPIController.updateCourse(int,int,com.courses.coursesapidata.data.Course)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+""2018-08-26 11:52:02 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+""2018-08-26 11:52:03 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:52:03 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:52:03 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+""2018-08-26 11:52:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-08-26 11:52:03 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8200 (http)
+""2018-08-26 11:52:03 [main] INFO  c.c.c.CoursesApiDataApplication - Started CoursesApiDataApplication in 16.217 seconds (JVM running for 17.781)
 "
